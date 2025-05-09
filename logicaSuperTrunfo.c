@@ -113,7 +113,7 @@ int main() {
     printf("\n (1) População; \n (2) Area; \n (3) PIB; \n (4) Numero de Pontos Turisticos; \n (5) Densidade Populacional; \n (6) PIB Per Capital; \n (7) Super Poder; \n");
     scanf("%u", &batalha);
 
-    //Aqui vou usar if..else compostos: Em um if comparo os valores de 'batalha' e dentro desse if eu coloco outro para definir o vencedor
+    //Aqui vou usar if..else aninhados: Em um if comparo os valores de 'batalha' e dentro desse if eu coloco outro para definir o vencedor
     
     if (batalha == 1){
         if (populacao > populacao2){
