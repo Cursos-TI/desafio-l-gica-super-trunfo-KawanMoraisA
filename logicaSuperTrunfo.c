@@ -32,7 +32,8 @@ int main() {
     float pibPerCapital2;
     float superPoder2;
 
-    unsigned int batalha; // nova variavel pra armazenar a escolha de abributo para batalha.
+    unsigned int batalha;
+    unsigned int batalha2; // nova variavel pra armazenar a escolha de abributo para batalhas.
 
     //Essa parte de variaveis e cadastro das cartas eu havia pegado do codigo anterior já que estava comentado que poderia fazer isso.
     /*Mas como agora no nivel Aventureiro estava escrito que poderia usar as cartas cadastradas no nivel anteior por motivos de
@@ -132,7 +133,7 @@ int main() {
         } else{
             printf("Carta 1 - %s: Area = %f \n", nome, area);
             printf("Carta 2 - %s: Area = %f \n", nome2, area2);
-            printf("Area de %s(%f) venceu \n", nome2, area);
+            printf("Area de %s(%f) venceu \n", nome2, area2);
         }
         break;
     case 3:
@@ -152,61 +153,61 @@ int main() {
         break;
     case 4:
        if (numeroPontoTuristico > numeroPontoTuristico2){
-            printf("Carta 1 - %s: Numero De Pontos Turisticos = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Numero De Pontos Turisticos = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: Numero De Pontos Turisticos = %u \n", nome, numeroPontoTuristico);
+            printf("Carta 2 - %s: Numero De Pontos Turisticos = %u \n", nome2, numeroPontoTuristico2);
             printf("Quantidade de pontos turisticos de %s(%u) \n", nome, numeroPontoTuristico);
         } else if(numeroPontoTuristico == numeroPontoTuristico2){
-            printf("Carta 1 - %s: Numero De Pontos Turisticos = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Numero De Pontos Turisticos = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: Numero De Pontos Turisticos = %u \n", nome, numeroPontoTuristico);
+            printf("Carta 2 - %s: Numero De Pontos Turisticos = %u \n", nome2, numeroPontoTuristico2);
             printf("EMPATE!\n");
         } else{
-            printf("Carta 1 - %s: Numero De Pontos Turisticos = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Numero De Pontos Turisticos = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: Numero De Pontos Turisticos = %u \n", nome, numeroPontoTuristico);
+            printf("Carta 2 - %s: Numero De Pontos Turisticos = %u \n", nome2, numeroPontoTuristico2);
             printf("Quantidade de Pontos Turisticos de %s(%u) \n", nome2, numeroPontoTuristico2);
         }
         break;
     case 5:
          if (densidadePopulacional < densidadePopulacional2){
-            printf("Carta 1 - %s: Densidade Populacional = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Densidade Populacional = %u \n", nome2, populacao2);
-            printf("Densidade populacional de %s(%u) \n", nome, densidadePopulacional);
+            printf("Carta 1 - %s: Densidade Populacional = %f \n", nome, densidadePopulacional);
+            printf("Carta 2 - %s: Densidade Populacional = %f \n", nome2, densidadePopulacional2);
+            printf("Densidade populacional de %s venceu \n", nome, densidadePopulacional);
         } else if(densidadePopulacional == densidadePopulacional2){
-            printf("Carta 1 - %s: Densidade Populacional = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Densidade Populacional = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: Densidade Populacional = %f \n", nome, densidadePopulacional);
+            printf("Carta 2 - %s: Densidade Populacional = %f \n", nome2, densidadePopulacional2);
             printf("EMPATE!\n");
         } else{
-            printf("Carta 1 - %s: Densidade Populacional = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Densidade Populacional = %u \n", nome2, populacao2);
-            printf("Densidade populacional de %s(%u) \n", nome2, densidadePopulacional2);
+            printf("Carta 1 - %s: Densidade Populacional = %f \n", nome, densidadePopulacional);
+            printf("Carta 2 - %s: Densidade Populacional = %f \n", nome2, densidadePopulacional2);
+            printf("Densidade populacional de %s venceu \n", nome2, densidadePopulacional2);
         }
         break;
     case 6:
           if (pibPerCapital > pibPerCapital2){
-            printf("Carta 1 - %s: PIB Per Capital = %u \n", nome, populacao);
-            printf("Carta 2 - %s: PIB Per Capital = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: PIB Per Capital = %f \n", nome, pibPerCapital);
+            printf("Carta 2 - %s: PIB Per Capital = %f \n", nome2, pibPerCapital2);
             printf("PIB per capital de %s(%f) venceu \n", nome, pibPerCapital);
         } else if(pibPerCapital == pibPerCapital2){
-            printf("Carta 1 - %s: PIB Per Capital = %u \n", nome, populacao);
-            printf("Carta 2 - %s: PIB Per Capital = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: PIB Per Capital = %f \n", nome, pibPerCapital);
+            printf("Carta 2 - %s: PIB Per Capital = %f \n", nome2, pibPerCapital2);
             printf("EMPATE!\n");
         } else{
-            printf("Carta 1 - %s: PIB Per Capital = %u \n", nome, populacao);
-            printf("Carta 2 - %s: PIB Per Capital = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: PIB Per Capital = %f \n", nome, pibPerCapital);
+            printf("Carta 2 - %s: PIB Per Capital = %f \n", nome2, pibPerCapital2);
             printf("PIB per capital de %s(%f) venceu \n", nome2, pibPerCapital2);
         }
         break;
     case 7:
          if (superPoder > superPoder2){
-            printf("Carta 1 - %s: Super Poder = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Super Poder = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: Super Poder = %f \n", nome, superPoder);
+            printf("Carta 2 - %s: Super Poder = %f \n", nome2, superPoder2);
             printf("O Super Poder de %s(%f) venceu \n", nome, superPoder);
         } else if(superPoder == superPoder2){
-            printf("Carta 1 - %s: Super Poder = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Super Poder = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: Super Poder = %f \n", nome, superPoder);
+            printf("Carta 2 - %s: Super Poder = %f \n", nome2, superPoder2);
             printf("EMPATE!\n");
         } else{
-            printf("Carta 1 - %s: Super Poder = %u \n", nome, populacao);
-            printf("Carta 2 - %s: Super Poder = %u \n", nome2, populacao2);
+            printf("Carta 1 - %s: Super Poder = %f \n", nome, superPoder);
+            printf("Carta 2 - %s: Super Poder = %f \n", nome2, superPoder2);
             printf("O Super Poder de %s(%f) venceu \n", nome2, superPoder2);
         }
         break;
