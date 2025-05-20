@@ -32,8 +32,8 @@ int main() {
     float pibPerCapital2;
     float superPoder2;
 
-    unsigned int batalha;
-    unsigned int batalha2; // nova variavel pra armazenar a escolha de abributo para batalhas.
+    unsigned int batalha, batalha2; // nova variavel pra armazenar a escolha de abributo para batalhas.
+    float soma1, soma2; // nova variavel pra armazenar a soma das batalhas.
 
     //Essa parte de variaveis e cadastro das cartas eu havia pegado do codigo anterior já que estava comentado que poderia fazer isso.
     /*Mas como agora no nivel Aventureiro estava escrito que poderia usar as cartas cadastradas no nivel anteior por motivos de
@@ -120,6 +120,8 @@ int main() {
                 printf("Carta 2 - %s: População = %u \n", nome2, populacao2);
                 printf("População de %s(%u) venceu \n", nome2, populacao2);
             }
+        soma1 = populacao;
+        soma2 = populacao2;
         break;
     case 2:
         if (area > area2){
@@ -135,6 +137,8 @@ int main() {
             printf("Carta 2 - %s: Area = %f \n", nome2, area2);
             printf("Area de %s(%f) venceu \n", nome2, area2);
         }
+        soma1 = area;
+        soma2 = area2;
         break;
     case 3:
         if (pib > pib2){
@@ -150,6 +154,8 @@ int main() {
             printf("Carta 2 - %s: PIB = %f \n", nome2, pib2);
             printf("PIB de %s(%f) venceu \n", nome2, pib2);
         }
+        soma1 = pib;
+        soma2 = pib2;
         break;
     case 4:
        if (numeroPontoTuristico > numeroPontoTuristico2){
@@ -165,6 +171,8 @@ int main() {
             printf("Carta 2 - %s: Numero De Pontos Turisticos = %u \n", nome2, numeroPontoTuristico2);
             printf("Quantidade de Pontos Turisticos de %s(%u) \n", nome2, numeroPontoTuristico2);
         }
+        soma1 = numeroPontoTuristico;
+        soma2 = numeroPontoTuristico2;
         break;
     case 5:
          if (densidadePopulacional < densidadePopulacional2){
@@ -180,6 +188,8 @@ int main() {
             printf("Carta 2 - %s: Densidade Populacional = %f \n", nome2, densidadePopulacional2);
             printf("Densidade populacional de %s venceu \n", nome2, densidadePopulacional2);
         }
+        soma1 = densidadePopulacional;
+        soma2 = densidadePopulacional2;
         break;
     case 6:
           if (pibPerCapital > pibPerCapital2){
@@ -195,6 +205,8 @@ int main() {
             printf("Carta 2 - %s: PIB Per Capital = %f \n", nome2, pibPerCapital2);
             printf("PIB per capital de %s(%f) venceu \n", nome2, pibPerCapital2);
         }
+        soma1 = pibPerCapital;
+        soma2 = pibPerCapital2;
         break;
     case 7:
          if (superPoder > superPoder2){
@@ -210,6 +222,8 @@ int main() {
             printf("Carta 2 - %s: Super Poder = %f \n", nome2, superPoder2);
             printf("O Super Poder de %s(%f) venceu \n", nome2, superPoder2);
         }
+        soma1 = superPoder;
+        soma2 = superPoder2;
         break;
     default:
     printf("Erro: Numero Invalido, opção (%d) não encontrada, tente novamente", batalha);
@@ -246,6 +260,8 @@ int main() {
                 printf("Carta 2 - %s: População = %u \n", nome2, populacao2);
                 printf("População de %s(%u) venceu \n", nome2, populacao2);
             }
+        soma1 += populacao;
+        soma2 += populacao2;
         break;
     case 2:
         if (area > area2){
@@ -261,6 +277,8 @@ int main() {
             printf("Carta 2 - %s: Area = %f \n", nome2, area2);
             printf("Area de %s(%f) venceu \n", nome2, area2);
         }
+        soma1 += area;
+        soma2 += area2;
         break;
     case 3:
         if (pib > pib2){
@@ -276,6 +294,8 @@ int main() {
             printf("Carta 2 - %s: PIB = %f \n", nome2, pib2);
             printf("PIB de %s(%f) venceu \n", nome2, pib2);
         }
+        soma1 += pib;
+        soma2 += pib2;
         break;
     case 4:
        if (numeroPontoTuristico > numeroPontoTuristico2){
@@ -291,6 +311,8 @@ int main() {
             printf("Carta 2 - %s: Numero De Pontos Turisticos = %u \n", nome2, numeroPontoTuristico2);
             printf("Quantidade de Pontos Turisticos de %s(%u) \n", nome2, numeroPontoTuristico2);
         }
+        soma1 += numeroPontoTuristico;
+        soma2 += numeroPontoTuristico2;
         break;
     case 5:
          if (densidadePopulacional < densidadePopulacional2){
@@ -306,6 +328,8 @@ int main() {
             printf("Carta 2 - %s: Densidade Populacional = %f \n", nome2, densidadePopulacional2);
             printf("Densidade populacional de %s venceu \n", nome2, densidadePopulacional2);
         }
+        soma1 += densidadePopulacional;
+        soma2 += densidadePopulacional2;
         break;
     case 6:
           if (pibPerCapital > pibPerCapital2){
@@ -321,6 +345,8 @@ int main() {
             printf("Carta 2 - %s: PIB Per Capital = %f \n", nome2, pibPerCapital2);
             printf("PIB per capital de %s(%f) venceu \n", nome2, pibPerCapital2);
         }
+        soma1 += pibPerCapital;
+        soma2 += pibPerCapital2;
         break;
     case 7:
          if (superPoder > superPoder2){
@@ -336,10 +362,21 @@ int main() {
             printf("Carta 2 - %s: Super Poder = %f \n", nome2, superPoder2);
             printf("O Super Poder de %s(%f) venceu \n", nome2, superPoder2);
         }
+        soma1 += superPoder;
+        soma2 += superPoder2;
         break;
     default:
     printf("Erro: Numero Invalido, opção (%d) não encontrada, tente novamente", batalha);
         break;
     }
-    return 0;
+
+    // resultado da soma dos abributos escolhidos:
+    printf("\nResultado da soma das cartas: \n");
+    if(soma1 == soma2) {
+        printf("Empate! %.2f contra %.2f", soma1, soma2);
+    } else if(soma1 > soma2) {
+        printf("Carta 1 ganhou com o total de %.2f contra %.2f", soma1, soma2);
+    } else {
+        printf("Carta 2 ganhou com o total de %.2f contra %.2f", soma2, soma1);
+    }
 }
